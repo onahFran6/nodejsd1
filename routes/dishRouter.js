@@ -16,7 +16,7 @@ dishRouter.use(bodyParser.json());
     .then((dishes) => {
         res.statusCode =200;
         res.setHeader('content-Type','application/json');
-        res.json(dishes)
+        res.json(dishes);
     },(err) => next(err))
     .catch((err) => next(err));
 })
